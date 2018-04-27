@@ -22,11 +22,14 @@ public class WebAppInitalizer implements WebApplicationInitializer {
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
         dispatcher.setLoadOnStartup(1);//서블릿이 배치(deploy)될 때 (즉, 컨텍스트가 인식될 때) 숫자가 작은 것 부터 먼저 로딩
         dispatcher.addMapping("/*");
+        dispatcher.setAsyncSupported(true);
     }
 
     private AnnotationConfigWebApplicationContext getContext() {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
         context.setConfigLocation("edu.reactive.spring.config");
+
+
         return context;
     }
 }

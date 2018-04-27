@@ -16,6 +16,7 @@ dependencies {
     compile("org.springframework:spring-webmvc:5.0.5.RELEASE")
     compile("org.springframework:spring-webflux:5.0.5.RELEASE")
     compile("javax.servlet:javax.servlet-api:3.1.0")
+    //compile("org.apache.tomcat.embed:tomcat-embed-core")
 
     compile("org.projectlombok:lombok:1.16.10")
 
