@@ -16,6 +16,13 @@ dependencies {
     compile("org.springframework:spring-webmvc:5.0.5.RELEASE")
     compile("org.springframework:spring-webflux:5.0.5.RELEASE")
     compile("javax.servlet:javax.servlet-api:3.1.0")
+    compile("ch.qos.logback:logback-classic:1.2.3")
+    compile("mysql:mysql-connector-java:5.1.34")
+    compile("org.springframework.data:spring-data-jpa:2.0.7.RELEASE")
+    compile("org.apache.commons:commons-dbcp2:2.1.1")
+    compile("org.hibernate:hibernate-core:5.2.17.Final")
+    compile("org.hibernate:hibernate-entitymanager:5.1.0.Final")
+
     //compile("org.apache.tomcat.embed:tomcat-embed-core")
 
     compile("org.projectlombok:lombok:1.16.10")
